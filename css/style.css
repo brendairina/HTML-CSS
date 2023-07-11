@@ -1,0 +1,259 @@
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+   background-color:rgb(255, 255, 241);
+}
+/* ------------------------------INICIO ------------------------*/
+header{
+    
+    display: grid;
+}
+
+header div {
+    display: grid;
+     text-align: center; 
+    
+} 
+
+header div.iniciosesion ul li{
+    
+    display: inline-block;
+    list-style: none;
+    padding-left: 15px;
+    
+}
+
+header div.iniciosesion{
+    padding: 4px;
+    text-align: end;
+    
+    
+    
+}
+
+
+header div.instagram{
+    text-align: center;
+    background-color: pink;
+    
+}
+
+
+
+/* logo */
+.logo img{
+    width: 100px;
+}
+    
+
+
+/* carrito */
+.carrito img{
+    width: 30px;
+
+}
+
+nav div input{
+    font-family: 'Shadows Into Light', cursive;
+    margin-inline: 220px;
+    font-size: 20px;
+    background-color: rgb(250, 234, 245);
+    text-align: center;
+    border-color: rgb(250, 250, 217);
+    padding-inline: 300px;
+}
+
+div div.productos {
+    
+   display: inline-block;
+  
+}
+
+nav{
+   padding-left: 30px;
+   display: inline-flex;
+   align-items: center;
+   
+}
+
+
+/* menu */
+
+nav.menu ul li{
+list-style: none;
+display: inline-block;
+text-align: center;
+text-transform: uppercase;
+font-family: Arial, Helvetica, sans-serif;
+padding-left: 30px;
+}
+
+nav .menu{
+padding-left: 300px;
+}
+
+.banner img{
+ width: 1400px;
+}
+
+.banner{
+    padding: 30px;
+}
+
+div{
+    display: -moz-grid-line;
+}
+
+/* --------------------busqueda---------------- */
+
+.busqueda {
+    
+    display: inline-flex;
+    align-items: center;
+    grid-column: 3 span;
+ 
+}
+
+
+/* ---------------------INICIAR SESION------------------------- */
+
+div.iniciarsesion {
+    
+    text-align: center;
+    margin: 40px;
+    position: relative;
+    
+}
+
+
+.iniciarsesion label{
+    text-align: center;
+  color: palevioletred;
+    font-size: 15px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.iniciarsesion input{
+    padding: 10px;
+    border-color: palevioletred;
+    font-size: 20px;
+    margin-block-end: 50px;
+    
+}
+
+/* -------------------------CREAR CUENTA------------------------ */
+div.crearcuenta {
+    
+    text-align: center;
+    margin: 30px;
+    
+}
+
+.crearcuenta label{
+    text-align: center;
+  color: palevioletred;
+    font-size: 15px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.crearcuenta input{
+    padding: 15px;
+    border-color: palevioletred;
+    font-size: 20px;
+    margin-block-end: 30px;
+    
+}
+
+/* ----------------------PRODUCTOS----------------------------- */
+.productos {
+    align-items: center;
+   
+}
+.productos div {
+    display: inline-block;
+
+}
+
+
+.productos div img{
+    height: 300px;
+    margin: 30px;
+    
+}
+
+    
+.masproductos{
+    text-decoration:none;
+    font-size: x-large;
+    margin: 40px;
+}
+
+/* --------------------info----------------------------------------- */
+
+
+.info{
+    display: grid;
+    margin-top: 40px;
+    
+    
+}
+
+ .info div h1{
+    margin: 20px ;
+    text-align: center;
+    font-size: 30px;
+    color: palevioletred;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+ .info div h2{ 
+    
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Pompiere', cursive;
+    margin-inline: 30px;
+    
+
+}
+.info div h2 ul{
+   margin: 1rem;
+   padding: 2rem;
+    font-size: 20px;
+   
+} */ 
+
+
+/* ----FOOTER----------------------------------------------------------- */
+footer div{
+    display: grid ;
+    
+   background-color: pink;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 10px;
+}
+
+
+
+/* mq en informacion importante y productos */
+
+@media screen and (min-width:1024px){
+
+    nav{ display: grid;
+        justify-items: center;
+
+      } 
+
+    main div .productos {
+        margin: 0;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+}
